@@ -1,0 +1,225 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header{
+  background-color: #48CFAD;
+  height: 61px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav_container {
+/* border: 1px solid red; */
+display: flex;
+justify-content: space-around;
+width: 280px;
+margin:0 40px;
+}
+.nav_container a {
+  display: inherit;
+  justify-content: space-between;
+ /*  border: 1px solid green; */
+}
+.main_container {
+  height: 100%;
+  background-image: url('/assets/images/Cover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ /*  border: 1px solid springgreen;  */
+
+}
+.main_container-home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 20px;
+}
+.home-item1 img {
+  width: 400px;
+  cursor: pointer;
+}
+.home-item2 {
+  /* border: 1px solid green;  */
+  display: inherit;
+  justify-items: flex-end;
+  margin:30px;
+}
+.home-item2 a {
+  color: white;
+  font-size: 32px;
+  font-weight: 200;
+}
+.main_second-section {
+  margin: auto;
+  width:100%;
+  height: auto;
+  margin-top: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.1px;
+  color: white;
+  font-size: 68px;
+  font-weight: 700;
+}
+.main_container button {
+  width: 220px;
+  height: 78px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 190px;
+  background-color: #48CFAD;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  font-family: 'Roboto Mono', monospace;
+}
+/*---------------------- PROFILE PAGES -----------------*/
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #E6E9ED;
+}
+.profile_container {
+/*   border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.profile_container-img img {
+  width: 500px;
+  margin: 60px;
+ /*  border: 1px solid blue; */
+}
+.profile_container-details {
+  /* border: 1px solid green; */
+  margin-right: 40px;
+  text-align: justify;
+}
+.profile_container-details h5 {
+  font-size: 60px;
+  font-weight: 500;
+}
+/*--------------- PROFILE PAGES -----------------------------
+-----------------PROJECTS SECTION---------------------------*/
+.middle_section {
+  height: 80px;
+  font-size: 26px;
+	margin-top: 75px;
+  text-align: center;
+}
+.divisor_line {
+  color: #E6E9ED;
+  width: 90%;
+  margin: auto;
+}
+.projects{
+  margin: auto;
+  padding: auto;
+  display:flex;
+  justify-content: center;
+}
+.projects_container{
+  width: 90%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ /*  border: 1px solid red; */
+  grid-gap: 80px;
+  margin-bottom: 5rem;
+}
+.projects_container-p{
+ /*  border: 1px solid blue; */
+  display: inherit;
+  grid-row-gap: 20px;
+  text-align: justify;
+}
+.projects_container-p h3{
+  font-size:26px;
+}
+/*--------------- PROFILE PAGES -----------------------------
+-----------------CONTACT SECTION---------------------------*/
+.contact {
+  background-color: #E6E9ED;
+  display: flex;
+  justify-content: center;
+}
+.contact_container{
+  display: grid;
+  width:90%;
+  grid-template-columns:repeat(2, 1fr);
+/*   border: 1px solid turquoise; */
+  grid-gap: 20px;
+  padding: 5em 0;
+}
+.contact_1 {
+  display: flex;
+/*   border: 1px solid red; */
+  align-items: center;
+}
+.contact_1-img img{
+  width:130px;
+}
+.contact_1-info {
+  margin: 20px;
+}
+.contact_1-info p {
+  margin-top: 10px;
+}
+/*--------------- PROFILE PAGES -----------------------------
+-----------------BEFORE FOOTER SECTION---------------------------*/
+.before_footer {
+  height: 50px;
+  background-color: #48CFAD;
+}
+/*--------------- PROFILE PAGES -----------------------------
+-----------------FOOTER SECTION---------------------------*/
+.footer{
+  background: #23282D;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_container a {
+  text-decoration: none;
+  color: #48CFAD;
+}
+/*-----------------RESPONSIVE MEDIA QUERIES-------------------------------*/
+@media screen and (max-width: 660px){
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_container-home {
+    display: flex;
+    flex-direction: column;
+  }
+  .main_second-section {
+    text-align: center;
+    width:100%;
+    height: auto;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
